@@ -167,9 +167,29 @@ ul {
   .header-menu {
     order: 1;
   }
-  .header-menu .menu-list {
-    display: none;
+  .menu {
+    /* position: relative; */
   }
+  .header-menu-list {
+    background-color: #7b6152;
+    color: #fff8f3;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 45px;
+    z-index: 1;
+    position: fixed;
+    right: 0;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    top: 77px;
+    transform: translateX(100%);
+  }
+  .header-menu-list.menu-open {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
   .menu-btn {
     display: block;
   }

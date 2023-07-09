@@ -18,7 +18,13 @@
 <symbol id="icon-phone" viewBox="0 0 20 21">
 <path d="M17.4999 13.8612L13.1083 13.3532L11.0083 15.4519C8.64258 14.2495 6.71973 12.3278 5.51659 9.96356L7.62492 7.8565L7.11659 3.48413H2.52492C2.04159 11.9624 9.01658 18.9332 17.4999 18.4501V13.8612Z" fill="#BEA495"/>
 </symbol>
-
+<symbol id="icon-burger" viewBox="0 0 30 25">
+<rect width="30" height="1" fill="#7B6152"/>
+<rect y="6" width="30" height="1" fill="#7B6152"/>
+<rect y="12" width="30" height="1" fill="#7B6152"/>
+<rect y="18" width="30" height="1" fill="#7B6152"/>
+<rect y="24" width="30" height="1" fill="#7B6152"/>
+</symbol>
 
 </defs>
 </svg>

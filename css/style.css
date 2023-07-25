@@ -307,9 +307,15 @@ img {
 }
 
 /* ------------------courses----------------- */
-/* .courses-item {
-  width: 270px;
-} */
+.courses-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.courses-item-descr {
+  margin-top: 28px;
+  flex-grow: 1;
+}
 .courses-item-wrap {
   position: relative;
   color: #fff;
@@ -343,7 +349,6 @@ img {
 }
 
 .courses-item-img {
-  margin-bottom: 28px;
 }
 
 /* -----------footer--------------- */

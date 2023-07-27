@@ -659,6 +659,10 @@ img {
     top: 40%;
   }
 
+  .team-content {
+    gap: 30px 74px;
+  }
+
   .team-item-box {
     width: 106px;
     right: -70px;
@@ -725,6 +729,12 @@ img {
   }
   .products {
     padding-top: 50px;
+  }
+
+  .team-inner {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
   }
 }
 
@@ -793,6 +803,21 @@ img {
   }
   .about-item:nth-child(2) .about-item-img {
     width: 140px;
+  }
+  .team-content {
+    grid-template-columns: auto;
+  }
+  .team-item-img {
+    width: 204px;
+  }
+  .team-item-box {
+    width: 152px;
+  }
+  .team-item-name {
+    font-size: 12px;
+  }
+  .team-item-descr {
+    font-size: 10px;
   }
 }
 

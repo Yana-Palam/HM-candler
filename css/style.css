@@ -39,7 +39,6 @@ ul {
 }
 img {
   display: block;
-  width: 100%;
   object-fit: cover;
 }
 .btn {
@@ -372,7 +371,7 @@ img {
 .team-content {
   padding-bottom: 0;
   gap: 78px 177px;
-  justify-content: start;
+  justify-content: center;
 }
 .team-item {
   position: relative;
@@ -386,9 +385,10 @@ img {
   position: absolute;
   background-color: var(--secondary-btn-color);
   padding: 15px 7px;
-  bottom: -8px;
+  bottom: 13px;
   right: -100px;
   text-align: center;
+  z-index: 1;
 }
 .team-item-name {
   font-family: var(--secondary-font-family);
@@ -398,6 +398,85 @@ img {
 .team-item-descr {
   font-size: 10px;
 }
+/* ----------------feedback------------------- */
+.feedback {
+  padding-top: 150px;
+}
+
+.feedback-content {
+  padding-bottom: 110px;
+}
+.feedback-slider {
+  width: 760px;
+  overflow: hidden;
+}
+.feedback-item {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0 16px;
+  align-items: center;
+}
+.feedback-item-video {
+  position: relative;
+}
+.feedback-item-videobtn {
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.feedback-item-sociallink {
+  margin-bottom: 12px;
+}
+
+.feedback-item-name {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-family: var(--secondary-font-family);
+}
+
+.feedback-item-text {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.feedback-item-content {
+  padding-bottom: 70px;
+}
+.feedback-item-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+
+.feedback-content .swiper-pagination {
+  bottom: 50px;
+}
+
+.swiper-pagination-bullet {
+  height: 4px;
+  width: 53px;
+  background-color: var(--accent-color);
+  border-radius: 0;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--secondary-btn-color);
+}
+
+.certificates-slider {
+  width: 1135px;
+  overflow: hidden;
+}
+.certificates-content {
+  padding-bottom: 114px;
+}
+.certificates-content .swiper-pagination {
+  bottom: 60px;
+  text-align: left;
+}
+
 /* -----------footer--------------- */
 
 .footer {
@@ -432,6 +511,11 @@ img {
 }
 
 /* --------------adaptive-------------- */
+@media (max-width: 1160px) {
+  .team-content {
+    justify-content: start;
+  }
+}
 @media (max-width: 1100px) {
   .products-item {
     width: 276px;
@@ -448,6 +532,9 @@ img {
   }
   .team-content {
     gap: 70px 110px;
+  }
+  .feedback-slider {
+    width: 660px;
   }
 }
 @media (max-width: 1000px) {
@@ -511,6 +598,19 @@ img {
   }
   .team-item-box {
     width: 150px;
+  }
+
+  .feedback-inner {
+    grid-template-columns: 260px auto;
+  }
+  .certificates-inner {
+    grid-template-columns: 270px auto;
+  }
+  .certificates-slider {
+    width: 860px;
+  }
+  .certificates-img {
+    width: 280px;
   }
 }
 

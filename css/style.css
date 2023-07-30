@@ -469,6 +469,7 @@ img {
 .swiper-pagination-bullet-active {
   background-color: var(--secondary-btn-color);
 }
+/* ---------------------certificates-------------- */
 
 .certificates-slider {
   width: 1135px;
@@ -482,6 +483,53 @@ img {
   text-align: center;
 }
 
+/* ---------------------questions-------------- */
+.questions-descr {
+  text-align: center;
+}
+
+.accordeon-item {
+  background-color: #fafafa;
+  box-shadow: 0px 4px 11px 0px rgba(196, 174, 151, 0.2);
+}
+.accordeon-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.accordeon-title {
+  position: relative;
+  font-size: 16px;
+  font-family: var(--secondary-font-family);
+  background-color: transparent;
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 16px 50px 16px 13px;
+}
+.accordeon-title::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/arrow.svg);
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 26px;
+}
+.accordeon-title-active.accordeon-title::after {
+  transform: rotate(180deg);
+}
+.accordeon-text {
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.3s linear, max-height 0.3s linear;
+}
+.accordeon-text-wrap {
+  padding: 20px 40px;
+}
+
+.accordeon-text.accordeon-text-visible {
+  opacity: 1;
+}
 /* --------------------promo-------------------- */
 .promo {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -901,6 +949,14 @@ img {
   .certificates-img {
     width: 200px;
   }
+  .accordeon-title {
+    font-size: 12px;
+  }
+  .accordeon-title::after {
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+  }
   .promo-text {
     font-size: 15px;
   }
@@ -1002,6 +1058,9 @@ img {
   }
   .feedback-slider {
     width: 500px;
+  }
+  .questions-title {
+    margin-bottom: 30px;
   }
   .promo {
     padding: 42px 0;
